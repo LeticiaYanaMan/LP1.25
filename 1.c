@@ -3,7 +3,7 @@
 
 int main() {
     char string[1001];
-    scanf("%s", &string[1001]);
-    printf("%s\n", string[1001]);
+    scanf("%1000s", string);
+    printf("%s\n", string);
 
     return 0;
