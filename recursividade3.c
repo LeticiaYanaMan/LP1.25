@@ -1,11 +1,16 @@
 #include <stdio.h>
-#include <string.h>
+
+int contagem(int N) {
+  if (N == 0) {
+    return 1;
+  }
+  return 1 + contagem(N / 10);
+}
 
 int main() {
-  char V[1001];
-  scanf("%1000s", &V);
+  int N;
+  scanf("%d", &N);
+  printf("%d\n", contagem(N));
 
-
-
-
-  
+  return 0;
+}
