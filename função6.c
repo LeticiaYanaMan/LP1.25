@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-int convert(char c) {
-  if 
-
-
+char convert(char c) {
+  return c - 32;
+}
 
 int main() {
   char C;
   scanf("%c", &C);
-  convert(C);
+  printf("%c\n", convert(C));
 
   return 0;
 }
