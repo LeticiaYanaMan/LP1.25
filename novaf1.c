@@ -16,6 +16,9 @@ int comp(int N) {
   else if (18 <= N) {
     return 4;
   }
+  else {
+    return 5;
+  }
 }
 
 int main() {
@@ -35,6 +38,9 @@ int main() {
   }
   else if (comp(Idade) == 4) {
     printf("Adulto\n");
+  }
+  else {
+    printf("Não compete\n");
   }
   return 0;
 }
