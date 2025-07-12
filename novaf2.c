@@ -1,19 +1,23 @@
-#include <studio.h>
+#include <stdio.h>
 
 double ideal(char S, double A) {
-  if (S == 'M') {
-    return 62,1*A - 44,7;
+  double pIdeal = 0;
+  if (S == 'F') {
+    pIdeal = 62.1 * A - 44.7;
   }
-  else if (S == 'H') {
-    return 72,7*A - 58;
+  else if (S == 'M') {
+    pIdeal = 74.7 * A - 58;
   }
+  return pIdeal;
 }
 
 int main() {
   double altura;
   char genero;
   scanf("%lf %c", &altura, &genero);
-  printf("seu peso ideal é: %.2lf\n", ideal(S, A));
+  double peso = ideal(genero, altura);
+  printf("seu peso ideal é: %.2lf\n", peso);
 
   return 0;
 }
+
