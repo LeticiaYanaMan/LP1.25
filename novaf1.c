@@ -23,16 +23,21 @@ int main() {
   scanf("%d", &Idade);
   if (comp(Idade) == 0) {
     printf("Infantil A\n"); 
-} 
-
-  if (comp(Idade) == 1) {
+  } 
+  else if (comp(Idade) == 1) {
     printf("Infantil B\n");
-  if (comp(Idade) == 2) {
+  }
+  else if (comp(Idade) == 2) {
     printf("Juvenil A\n");
-  if (comp(Idade) == 3) {
+  }
+  else if (comp(Idade) == 3) {
     printf("Juvenil B\n");
-  if (comp(Idade) == 4) {
+  }
+  else if (comp(Idade) == 4) {
     printf("Adulto\n");
+  }
+  return 0;
+}
 
 
 
