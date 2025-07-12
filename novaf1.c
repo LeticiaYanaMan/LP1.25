@@ -1,21 +1,45 @@
 #include <stdio.h>
 
-long char idade(int N) {
-  if (4 < N && N < 8) {
-    return 'Infantil A';
+int comp(int N) {
+  if (5 <= N && N <= 7) {
+    return 0;
   }
-  else if (7 < N && 11 > N) {
-    return 'Infantil B';
+  else if (8 <= N && N <= 10) {
+    return 1;
   }
- else if (10 < N && N > 14) {
-    return 'Juvenil A';
- }
- else if (13 < N && N > 18) {
-    return 'Juvenil B';
- }
-
-
-
+  else if (11 <= N && N <= 13) {
+    return 2;
+  }
+  else if (14 <= N && N <= 17) {
+    return 3;
+  }
+  else if (18 <= N) {
+    return 4;
+  }
+}
 
 int main() {
-  
+  int Idade;
+  scanf("%d", &Idade);
+  if (comp(Idade) == 0) {
+    printf("Infantil A\n"); 
+} 
+
+  if (comp(Idade) == 1) {
+    printf("Infantil B\n");
+  if (comp(Idade) == 2) {
+    printf("Juvenil A\n");
+  if (comp(Idade) == 3) {
+    printf("Juvenil B\n");
+  if (comp(Idade) == 4) {
+    printf("Adulto\n");
+
+
+
+
+
+
+
+
+
+
