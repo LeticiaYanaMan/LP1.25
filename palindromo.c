@@ -8,9 +8,15 @@ int main() {
   for (int i = 0; i < 1001; i++) {
     STRaux[1001] = STR[1001];
   }
-
-
   // STRaux tem a mesma palavra que STR 
-  for (int i = 0; i < 500; i++) {
-    STR[i] =  
+
+  size_t len = strlen(STR);
+  // 
+  for (int i = 0; i < len/2; i++) {
+    STR[i] = STRaux[len-i];
+  }
+
+  printf("%s", STR);
+  return 0;
+}
   
