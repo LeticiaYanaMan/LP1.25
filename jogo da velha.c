@@ -1,18 +1,49 @@
 #include <stdio.h>
 
-int main() {
-  for (int i = 0; i < 9; i++) {
-    int J[3][3];
-    int Linha, Coluna, val;
-    scanf("%d %d %d", &Linha, &Coluna, &val);
-    J[Linha][Coluna] = val;
+char J[3][3];
 
 
-    printf("%d"
+char inicio(int n) {
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+      return J[i][j] = '_';
+    }
   }
+}
 
-  if (J[0][0] == J[0][1] == J[0][2] || J[1][0] == J[1][1] == J[1][2] || J[2][0] == J[2][1] == J[2][2]) {
-    
+char printjogo(int n) {
+  for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
+      return printf("%c", J[i][j]);
+    }
+  }
+}
+
+char colojogo(int l, int c, char t) {
+  if (J[l][c] = '_') {
+    J[l][c] = t;
+    return printjogo(3);
+  }
+  if (J[l][c] = 'x' || J[l][c] = 'o') {
+    return printf("já ocupado\n");
+  }
+}
+
+int main() {
+  int n = 3;
+  inicio(n);
+  for (int i = 0; i < 1001; i++) {
+    int l, c;
+    char t;
+    scanf("%d %d %c", &l, %c, %t);
+    colojogo(l, c, t);
+  }
+  return 0;
+}
+
+  
+
+  
 
 
     
