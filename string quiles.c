@@ -28,3 +28,15 @@ int ordenado(char frase[], int n) {
   return n;
 }
 
+//
+int ordenado(char vet[], int i, int n) {
+  if (i==n-1) 
+    return n;
+  if (vet[i] > vet[i+1]) 
+    return i+1;
+  else 
+    return ordenado(vet, i+1, n);
+}
+
+
+
