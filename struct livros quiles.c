@@ -37,7 +37,7 @@ int f1(char s1[M], char s2[M]) {
       break;
     }
   }
-} // ele deu outra forma de chegar no mesmo resultado - tirei foto
+}      // ele deu outra forma de chegar no mesmo resultado - tirei foto
 
 void imp_livro_edi (char ed[M]) {
   int l;
@@ -48,10 +48,21 @@ void imp_livro_edi (char ed[M]) {
   }
 }
 
+void imp_livro_autor(char au[M]) {
+  int l, a;
+  for (l = 0; l < 500; l++) {
+    for ( a = 0; a < livros[l].qtda ; a++) {
+      if (f1(au, livros[l].autores[a].nome) = 0) {
+        printf("Titulo: %s\n", livros[l], titulo);
+      }
+    }
+  }
+}      // ler os autores de um determinado livro 
+
+
 int main() {
   imp_livro_edi("editoraX");
-
-
+  imp_livro_autor("AutorX");
   return 0;
 }
   
