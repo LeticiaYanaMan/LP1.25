@@ -12,11 +12,14 @@ int main() {
 
   size_t len = strlen(STR);
   // 
-  for (int i = 0; i < len/2; i++) {
+  for (int i = 0; i < (len + 1)/2; i++) {
     STR[i] = STRaux[len-i];
   }
 
-  printf("%s", STR);
+  for (int i = 0; i < len + 1; i++) {
+     printf("%c", STR[i]);
+  }
+  
   return 0;
 }
   
