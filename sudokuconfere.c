@@ -44,17 +44,16 @@ int main() {
     int VALOR[i];
     scanf("%d", &VALOR[i]);
     VERIF(VALOR[i]);
-    for (int j = 0; j < 10; j++) {
-      if (V[j] != 0 && V[j] != 1) {
-        printf("ERROR\n");
-        return 0;
-      }
-    }
-    printf("%d", VALOR[i]);
   }
+  for (int j = 0; j < 10; j++) {
+    if (V[j] != 0 && V[j] != 1) {
+      printf("ERROR\n");
+      break;
+    }
+  }
+  printf("FOI");
   return 0;
 }
-
 
 
 
