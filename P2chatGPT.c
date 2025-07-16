@@ -1,4 +1,4 @@
-// verificar se é palíndromo
+// string - verificar se é palíndromo
 
 #include <stdio.h>
 #include <string.h>
@@ -34,4 +34,40 @@ int main() {
     }
     return 0;
 }
+
+// recursiva - soma dos digitos de um numero inteiro positivo 
+
+#include <stdio.h>
+
+int soma(int n) {
+    if (n == 0) {
+        return 0;
+    }
+
+
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    printf("%d", soma(N));
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
