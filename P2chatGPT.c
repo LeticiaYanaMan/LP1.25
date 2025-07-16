@@ -78,9 +78,11 @@ int main() {
 
 // string invertida 
 
-// imprimir grade (sudoku)
+// sudoku - imprimir grade
 
-// verificar se um numero ja existe numa linha ou numa coluna
+
+
+// sudoku - verificar se um numero ja existe numa linha ou numa coluna
 
 
 
