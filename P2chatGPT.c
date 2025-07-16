@@ -54,7 +54,33 @@ int main() {
     return 0;
 }
 
+// recursiva - somar até N
 
+#include <stdio.h>
+
+int soma(int n) {
+    if(n == 0) {
+        return 0;
+    }
+    return n + soma(n -1);
+}
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    printf("%d", soma(N));
+    return 0;
+}
+
+// contar vogais em string
+
+// verificar se uma string é composta apenas por numeros
+
+// string invertida 
+
+// imprimir grade (sudoku)
+
+// verificar se um numero ja existe numa linha ou numa coluna
 
 
 
