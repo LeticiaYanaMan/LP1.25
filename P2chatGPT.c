@@ -46,8 +46,6 @@ int soma(int n) {
     return (n%10) + soma(N/10);
 }
 
-
-
 int main() {
     int N;
     scanf("%d", &N);
