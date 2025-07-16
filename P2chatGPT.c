@@ -80,7 +80,17 @@ int main() {
 
 // sudoku - imprimir grade
 
+#include <stdio.h>
 
+char TREE[i][j]
+
+int main() 
+    for(int i = 0; i < 3; i++) {
+        printf("\t");
+        for(int j = 0; j < 3; j++) {
+            printf("%c", TRE[i][j]);
+        }
+        printf("\n");
 
 // sudoku - verificar se um numero ja existe numa linha ou numa coluna
 
