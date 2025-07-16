@@ -41,8 +41,10 @@ int main() {
 
 int soma(int n) {
     if (n == 0) {
-        return 0;
+        return n;
     }
+    return (n%10) + soma(N/10);
+}
 
 
 
