@@ -82,15 +82,25 @@ int main() {
 
 #include <stdio.h>
 
-char TREE[i][j]
+char TREE[3][3];
 
-int main() 
+int main() {
+    char TRE[3][3];
+    
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            TRE[i][j] = '_';
+        }
+    }
     for(int i = 0; i < 3; i++) {
-        printf("\t");
+        printf("\t");                       // tabulação horizontal 
         for(int j = 0; j < 3; j++) {
             printf("%c", TRE[i][j]);
         }
-        printf("\n");
+        printf("\n");                      // nova linha 
+    }
+}
+
 
 // sudoku - verificar se um numero ja existe numa linha ou numa coluna
 
